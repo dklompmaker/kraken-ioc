@@ -14,18 +14,19 @@
     <description>$description$</description>
     <!--*-->
     <releaseNotes>
-    - Added IContainer.Bind TInterface, TImplementation
-    - Added IBinding.FromFactory and IBinding.FromFactoryMethod
-    - Added category support for Inject attribute when used within constructor, static constructor method or a method
-    - Added IContainer.HasBindingForCategory
+    - Fixes bug with private property setter on a derived type.
     </releaseNotes>
     <copyright>$copyright$</copyright>
     <tags> </tags>
     <dependencies>
     </dependencies>
+    <projectUrl>https://github.com/AgeOfLearning/kraken-ioc</projectUrl>
+    <repository type="git"
+               url="https://github.com/AgeOfLearning/kraken-ioc"/>
   </metadata>
   <files>
     <file src="$unityPackagePath$" target="unityPackages"/>
     <file src="$unityPackageExportRoot$/**/*" target="lib/unity"/>
+    <file src="**/*.cs" target="source"/>
   </files>
 </package>
